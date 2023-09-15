@@ -3,15 +3,25 @@ body {
     background-color: #f4f4f4;
 }
 .container {
-    max-width: 400px;
-    margin: 50px auto;
+    max-width: 500px;
+    /* margin: 50px auto; */
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 200px;
+    margin-left: 450px;
+    backdrop-filter: blur(19px) saturate(88%);
+    -webkit-backdrop-filter: blur(19px) saturate(88%);
+    background-color: rgba(17, 25, 40, 0.31);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: -100;
 }
+
+
 .form-group {
-    margin: 15px;
+    margin: 20px;
 }
 label {
     display: block;
@@ -29,15 +39,137 @@ input[type="radio"] {
     margin-right: 5px;
 }
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #553b1b;
     color: white;
     padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
 }
+
+input[type="reset"] {
+    background-color: #553b1b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #553b1b;
 }
+
+.navbar .links a:hover {
+    color: #f5f5f7;
+    /* background-color: gray; */
+    /* border-radius: 20px; */
+    /* height: 40px; */
+    transform: scale(1.1);  
+    border-bottom: 2px solid white;
+  }
+  
+  .navbar .buttons a {
+    text-decoration: none;
+    color: #f5f5f7;
+    font-size: 1rem;
+    padding: 15px 0;
+    transition: 0.2s ease;
+  }
+  
+  .navbar .buttons a:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .navbar .buttons .signin:hover {
+    text-decoration: underline;
+    font-size: 1.03rem;
+  }
+  
+  .navbar .buttons .signup {
+    border: 1px solid #f5f5f7;
+    padding: 10px 20px;
+    border-radius: 0.375rem;
+    text-align: center;
+    transition: 0.2s ease;
+  }
+  
+  .navbar .buttons .signup:hover {
+    background-color: #f5f5f7;
+    color: #1D1D1F;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    background-color: #553b1b;
+    z-index: 100;
+  }
+  
+  .navbar .logo a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 30px;
+    color: #f5f5f7;
+  }
+  
+  #submenu{
+      margin: 10px;
+      list-style-type:none;
+      opacity: 0;
+      position: absolute;
+      top: 35px;
+      visibility: hidden;
+      z-index: 1;  
+      text-align: left;  
+  }
+  
+  li:hover ul#submenu{
+      opacity: 1;
+      top: 80px;
+      visibility: visible;
+      background-color: #553b1b;
+      border-radius: 10px;
+  }
+  
+  .navbar .links {
+    display: flex;
+    justify-content: flex-end;
+    margin-left:700px;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+  }
+  
+  .navbar .links a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #f5f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    transition: 0.2s ease;
+  }
+  
+  .drop{
+    margin:0px 15px;
+    text-align: left;
+  }
+
 

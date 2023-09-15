@@ -1,5 +1,3 @@
-const income = document.querySelector('#income');
-
 
 function calculateIncomeTax(income, age) {
   let tax = 0;
@@ -13,9 +11,9 @@ function calculateIncomeTax(income, age) {
     tax = (income - 250000) * 0.05;
 
   } else if((income>500000) && (income <= 1000000) ){
-    tax = 250000 * 0.05 + (income - 500000) * 0.20;
+    tax = 12500 + (income - 500000) * 0.20;
   } else {
-    tax = 250000 * 0.05 + 500000* 0.20 +(income- 100000)*0.30 ;
+    tax = 112500 +(income- 100000)*0.30 ;
   }
   }
   else if ((age>=60)&&(age<80)){
@@ -43,23 +41,26 @@ function calculateIncomeTax(income, age) {
       tax = 500000* 0.20 +(income- 100000)*0.30 ;
     }
   }
-  //else if ( res== "Residential")
-  tax = tax + 0.04*tax ;
+
+  tax += 0.04*tax ;
   return tax;
 }
 
 
-function myFunction() {
+function myFunction(event) {
+
+  event.preventDefault();
+
   const income = parseFloat(document.getElementById("income").value);
   const age = parseFloat(document.getElementById("age").value);
-  //const res = document.querySelector('input[name="status"]:checked').value
   
   const tax = calculateIncomeTax(income, age);
   
   const outputTextarea = document.getElementById("output");
-  outputTextarea.value = `The income tax for an income of ${income} is: ${tax.toFixed(2)}`;
+  outputTextarea.value = `The income tax for an income of ${income} is: ${tax}`;
   
 }
+
 
 document.getElementById("submit").addEventListener("click", myFunction);
 

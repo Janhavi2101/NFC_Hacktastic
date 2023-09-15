@@ -49,7 +49,9 @@ function calculateIncomeTax(income, age) {
 }
 
 
-function myFunction() {
+function myFunction(event) {
+
+  event.preventDefault();
   const income = parseFloat(document.getElementById("income").value);
   const age = parseFloat(document.getElementById("age").value);
   //const res = document.querySelector('input[name="status"]:checked').value
