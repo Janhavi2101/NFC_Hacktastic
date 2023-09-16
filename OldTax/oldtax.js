@@ -52,6 +52,7 @@ function myFunction(event) {
   event.preventDefault();
 
   const income = parseFloat(document.getElementById("income").value);
+  income.disabled = false; 
   const age = parseFloat(document.getElementById("age").value);
   
   const tax = calculateIncomeTax(income, age);
