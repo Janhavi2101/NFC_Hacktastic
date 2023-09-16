@@ -9,30 +9,29 @@
 <body>
     <header class="header">
         <nav class="navbar">
-          <h2 class="logo"><a href="#">TAXEASE</a></h2>
-  
+            <h2 class="logo">
+                <img src="../images/logo.png">
+              </h2>  
           
           <ul class="links">
-            <li><a href="#">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="#">Tools</a>
               <ul id="submenu">
-                  <li><a href="newtax/newtax.html">New Tax Calculator</a></li>
+                  <li><a href="../newtax/newtax.html">New Tax Calculator</a></li>
                   <li><a href="OldTax/oldTax.html">Old Tax Calculator</a></li>
                   <li><a href="#">ITR</a></li>
        
               </ul>
               </li>
   
-              <li><a href="blog/blog.html">Blogs</a></li>
+              <li><a href="../blog/blog.html">Blogs</a></li>
   
               
             <li><a href="#">Guides</a>
               <ul id="submenu">
-                  <li class="drop"><a href="#">TDS</a></li>
-                  <li class="drop"><a href="#">80C</a></li>
-                  <li class="drop"><a href="#">80CCD</a></li>
-                  <li class="drop"><a href="#">80CCC</a></li>
-                  <li class="drop"><a href="#">80D</a></li>
+                  <li class="drop"><a href="../Guides/80c/TDS/tds.html">TDS</a></li>
+                  <li class="drop"><a href="../Guides/80c/80c.html">80C/80CC</a></li>
+                  <li class="drop"><a href="../Guides/80d/80d.html">80D</a></li>
                   <li class="drop"><a href="#">Notices</a></li>
               </ul>
               </li>
@@ -41,10 +40,13 @@
             
           </ul>
           <div class="buttons">
-            <a href="login/login.html" class="signup">Sign In / Sign Up</a>
+            <a href="../login/login.html" class="signup">Sign In / Sign Up</a>
           </div>
         </nav>
       </header>
+    
+        <h1>Old Income Tax Calculator</h1>
+    <div class="forms">
     <div class="container">
         <h2>Income Form</h2>
         <form action="#" method="post">
@@ -76,12 +78,44 @@
             </div>
         </form>
     </div>
+     <div class="container">
+        <h2>Deductions Info</h2>
+        <form action="#" method="post">
+            
+            
 
+                <label for="income">Tax Payable</label>
+                <div class="output">
+                    <textarea name="output" id="output" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    <br><br>
     <div class="slabs">
-        <img src="oldslab">
+        <h2>Old Tax regime</h2><br><br>
+        <h2>Income tax slabs for individual aged below 60 years & HUF</h2><br><br>
+        <img src="../images/oldbelow60.png"><br><br><br>
+        <h2>Income tax slab for individual aged above 60 years to 80 years</h2><br><br>
+
+        <img src="../images/old60_80.png"><br><br><br>
+        <h2>Income tax slab for Individual aged more than 80 years</h2><br><br>
+
+        <img src="../images/oldabove80.png"><br><br><br>
+
     </div>
 
-
+    <footer>
+        <div class="footer-content">
+            <h3>TAXease</h3><hr>
+            <p>TAXease offers taxation & financial solutions to individuals, businesses, organizations & chartered accountants in India. Clear serves 1.5+ Million happy customers, 20000+ CAs & tax experts & 10000+ businesses across India.</p>
+           
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 TAXease. designed by <span>TAXease</span></p>
+        </div>
+    </footer>
     <script src="oldtax.js"></script>
 </body>
 </html>

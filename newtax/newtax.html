@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="newtax.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">
+                <img src="../images/logo.png">
+              </h2>  
+          
+          <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Tools</a>
+              <ul id="submenu">
+                  <li><a href="newtax/newtax.html">New Tax Calculator</a></li>
+                  <li><a href="../OldTax/oldTax.html">Old Tax Calculator</a></li>
+                  <li><a href="#">ITR</a></li>
+       
+              </ul>
+              </li>
+  
+              <li><a href="../blog/blog.html">Blogs</a></li>
+  
+              
+            <li><a href="#">Guides</a>
+              <ul id="submenu">
+                  <li class="drop"><a href="../Guides/80c/TDS/tds.html">TDS</a></li>
+                  <li class="drop"><a href="../Guides/80c/80c.html">80C's</a></li>
+                  <li class="drop"><a href="../Guides/80d/80d.html">80D</a></li>
+                  <li class="drop"><a href="#">Notices</a></li>
+              </ul>
+              </li>
+            
+            
+            
+          </ul>
+          <div class="buttons">
+            <a href="../login/login.html" class="signup">Sign In / Sign Up</a>
+          </div>
+        </nav>
+      </header>
+
+      <h1>New Income Tax Calculator</h1>
+
     <div class="container">
         <h2>Income Form</h2>
         <form action="#" method="post">
@@ -20,24 +60,57 @@
                 <input type="text" id="age" name="age" required>
             </div>
             <div class="form-group">
-                <label for="financial-year">Financial Year</label>
-                <select id="financial-year" name="financial-year">
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                </select>
+                    <label>Financial Year:</label>
+                    <input type="radio" id="financial-year-2022" name="financial-year" value="2022" required>
+                    <label for="financial-year-2022">2022</label>
+                    <input type="radio" id="financial-year-2023" name="financial-year" value="2023" required>
+                    <label for="financial-year-2023">2023</label>
+                
             </div>
            <!-- -- -->
             <div class="form-group">
                 <input type="submit" value="Submit" id="submit">
-                <label for="income">Output:</label>
+                <input type="reset" value="reset" id="reset">
+
+                <label for="income">Tax Payable</label>
                 <div class="output">
                     <textarea name="output" id="output" cols="30" rows="10"></textarea>
                 </div>
             </div>
         </form>
     </div>
+    <br>
+    <div class="slabs">
+        <h2>New Tax regime</h2><br><br>
+        <h2>Income Tax Slab Rates For FY 2022-23 (AY 2023-24)</h2><br><br>
+        <img src="../images/newtr.png"><br><br>
 
-
+    </div><br>
+    <div class="points">
+    <h2>Important points to note if you select the new tax regime:</h2><br><br>
+    <li>Please note that the tax rates in the New tax regime is the same for all categories of Individuals, i.e. Individuals, Senior citizens and Super senior citizens. </li><br><br>
+    <li>Individuals with Net taxable income less than or equal to Rs 5 lakh will be eligible for tax rebate u/s 87A i.e. tax liability will be NIL in both – New and old/existing tax regimes. </li><br><br>
+    <li>Surcharge: In case the income exceeds a certain threshold, surcharge will be applicable<br><br>
+        Surcharge rates are as below-<br>
+            <ul>-10% of Income tax if total income > Rs.50 lakh</l><br>
+            <ul>-15% of Income tax if total income > Rs.1 crore</l><br>
+            <ul>-25% of Income tax if total income > Rs.2 crore</l><br>
+            <ul>-37% of Income tax if total income > Rs.5 crore</l><br>
+         </li>
+    </li><br><br>
+    <li>Additional Health and Education cess at the rate of 4% will be added to the income tax liability + surcharge in all cases
+    </li><br><br>
+</div>
+<footer>
+    <div class="footer-content">
+        <h3>TAXease</h3><hr>
+        <p>TAXease offers taxation & financial solutions to individuals, businesses, organizations & chartered accountants in India. Clear serves 1.5+ Million happy customers, 20000+ CAs & tax experts & 10000+ businesses across India.</p>
+       
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 TAXease. designed by <span>TAXease</span></p>
+    </div>
+</footer>
     <script src="newtax.js"></script>
 </body>
 </html>

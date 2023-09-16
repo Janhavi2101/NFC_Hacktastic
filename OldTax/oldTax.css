@@ -1,24 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mooli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  font-family: 'Mooli', sans-serif;
+  }
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff0b3;
 }
 .container {
-    max-width: 500px;
+    max-width: 1000px;
     /* margin: 50px auto; */
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 200px;
-    margin-left: 450px;
     backdrop-filter: blur(19px) saturate(88%);
     -webkit-backdrop-filter: blur(19px) saturate(88%);
     background-color: rgba(17, 25, 40, 0.31);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     z-index: -100;
+    width: 600px;
 }
 
+.forms{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .form-group {
     margin: 20px;
@@ -61,6 +75,8 @@ input[type="reset"] {
 input[type="submit"]:hover {
     background-color: #553b1b;
 }
+
+
 
 .navbar .links a:hover {
     color: #f5f5f7;
@@ -173,3 +189,72 @@ input[type="submit"]:hover {
   }
 
 
+.slabs{
+    text-align: center;
+}
+
+h1{
+    margin-top: 100px;
+    margin-bottom: -150px;
+    margin-left: 540px;
+}
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #553b1b;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+  margin-top: -10px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 1000px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+.logo {
+    display: flex;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: -10px;
+    /* font-size: large; */
+    background-size: cover;
+  }
+::-webkit-scrollbar{
+    display: none;
+}

@@ -13,7 +13,7 @@ function calculateIncomeTax(income, age) {
   } else if((income>500000) && (income <= 1000000) ){
     tax = 12500 + (income - 500000) * 0.20;
   } else {
-    tax = 112500 +(income- 100000)*0.30 ;
+    tax = 112500 +(income- 1000000)*0.30 ;
   }
   }
   else if ((age>=60)&&(age<80)){
@@ -27,7 +27,7 @@ function calculateIncomeTax(income, age) {
     } else if((income>500000) && (income <= 1000000) ){
       tax = 200000 * 0.05 + (income - 500000) * 0.20;
     } else {
-      tax = 200000 * 0.05 + 500000* 0.20 +(income- 100000)*0.30 ;
+      tax = 200000 * 0.05 + 500000* 0.20 +(income- 1000000)*0.30 ;
     }
   }
   else if(age>=80){
@@ -38,7 +38,7 @@ function calculateIncomeTax(income, age) {
     } else if((income>500000) && (income <= 1000000) ){
       tax =(income - 500000) * 0.20;
     } else {
-      tax = 500000* 0.20 +(income- 100000)*0.30 ;
+      tax = 500000* 0.20 +(income- 1000000)*0.30 ;
     }
   }
 

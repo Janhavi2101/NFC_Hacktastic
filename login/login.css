@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mooli&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif; 
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Mooli', sans-serif;
 }
 
 body{
@@ -128,6 +129,7 @@ li:hover ul#submenu{
   border-radius: 12px;
   box-shadow: 2px 2px 60px 21px rgba(32,29,29,0.73);   
    margin: 200px 40%;
+   z-index: -1;
    /* margin-top: 400px; */
   
 }
@@ -234,4 +236,60 @@ label {
 
 .form button:hover {
   background-color: #553b1b;
+}
+
+footer{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #553b1b;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+margin-top: -10px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 1000px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+.logo {
+  display: flex;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: -10px;
+  /* font-size: large; */
+  background-size: cover;
 }
