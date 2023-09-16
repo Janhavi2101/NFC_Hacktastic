@@ -63,4 +63,3 @@ function myFunction(event) {
 
 
 document.getElementById("submit").addEventListener("click", myFunction);
-

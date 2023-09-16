@@ -293,3 +293,7 @@ margin-top: -10px;
   /* font-size: large; */
   background-size: cover;
 }
+
+::-webkit-scrollbar{
+  display: none;
+}

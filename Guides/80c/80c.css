@@ -294,3 +294,7 @@ padding: 20px;
     /* font-size: large; */
     background-size: cover;
   }
+
+  ::-webkit-scrollbar{
+    display: none;
+}

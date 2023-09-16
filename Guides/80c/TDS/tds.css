@@ -301,3 +301,6 @@ padding: 20px;
     opacity: .4;
     font-weight: 200;
 }
+::-webkit-scrollbar{
+  display: none;
+}
